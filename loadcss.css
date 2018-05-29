@@ -1,54 +1,67 @@
-
-
 .header {
    width: 100%;
    height: 100px;
    background-color: #BDBDBD;
+   text-align: center;
+   padding: 40px 0;
+   margin-bottom: 20px
+}
+.header p{
+font-size: 20px
 }
 
-.load {
-  width: 300px;
+.motion {
+  width: 500px;
   height: 600px;
   margin: 0 auto;
   left: 50%;
   transform:translateX(-50%);
   position: absolute;
+
 }
 
-.load img{
-
-width: 100%;
+.motion img{
+width: 300px;
 height: 150px ;
 position: absolute;
 top: 50% ;
 transform:translateY(-50%);
 z-index: 1;
+margin-left: 100px;
 }
 
 .mask {
-  width: 100%;
+  width: 300px;
   height: 150px ;
-  background-color: rgba(255,2552,255,0.5);
+  background-color: rgba(255,2552,255,0.8);
   z-index:  2;
   position: absolute;
   top: 50% ;
   transform:translateY(-50%);
-
+  margin-left: 100px;
 
   animation-name: movemask;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
   -webkit-animation-name: movemask;
-  -webkit-animation-duration: 3s;
+  -webkit-animation-duration: 1s;
   -webkit-animation-iteration-count: infinite;
-
 }
+
 @-webkit-keyframes movemask {
     from {top:50%;}
-    to {top:75%;}
+    to {top:25%;}
 }
 
 @keyframes movemask {
     from {top:50%;}
-    to {top:75%;}
+    to {top:25%;}
+}
+
+.motion a {
+  width: 180px;
+  padding: 10px;
+  margin: 0 auto;
+  border: 1px solid #bdbdbd;
+  text-decoration: none;
 }
